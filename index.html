@@ -11,7 +11,7 @@ window._pcq = window._pcq || [];
 	_pcq.push(['subscriptionSuccessCallback',callbackFunctionOnSuccessfulSubscription]);
 	function callbackOnAPIReady() {
     //now api is ready
-    _pcq.push(['addSubscriberToSegment', 'homepage', callbackForAddToSegment]);
+    _pcq.push(['addSubscriberToSegment', 'sanchuOnLOad', callbackForAddToSegment]);
 	}
 	function callbackForAddToSegment(response) {
     if(response === -1) {
@@ -27,7 +27,7 @@ window._pcq = window._pcq || [];
     }
 	}
 	function callbackFunctionOnSuccessfulSubscription(subscriberId, values) {
-     _pcq.push(['addSubscriberToSegment', 'homepage2', callbackForAddToSegment]);
+     _pcq.push(['addSubscriberToSegment', 'sanchuOnSubscribe', callbackForAddToSegment]);
 	}
 
 </script>        
