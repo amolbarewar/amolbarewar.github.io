@@ -16,15 +16,8 @@ hello222
 window._pcq = window._pcq || [];
 _pcq.push(['APIReady', callbackOnAPIReady]); //will execute callback function when PushCrew API is ready
 
-_pcq.push(['subscriptionSuccessCallback',callbackOnSuccessfulSubscription]); //registers callback function to be called when user gets successfully subscribed
-
 function callbackOnAPIReady() {
    //now api is ready
-   _pcq.push(['addSubscriberToSegment', 'homepage', callbackForAddToSegment]);
-}
-
-function callbackOnSuccessfulSubscription(subscriberId, values) {
-   //user just got subscribed
    _pcq.push(['addSubscriberToSegment', 'homepage', callbackForAddToSegment]);
 }
 
