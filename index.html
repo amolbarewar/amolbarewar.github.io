@@ -65,12 +65,12 @@ _pcq.push(['subscriptionSuccessCallback',callbackOnSuccessfulSubscription]); //r
 
 function callbackOnAPIReady() {
    //now api is ready
-   _pcq.push(['addSubscriberToSegment', 'H P', callbackForAddToSegment]);
+   _pcq.push(['addSubscriberToSegment', 'HP', callbackForAddToSegment]);
 }
 
 function callbackOnSuccessfulSubscription(subscriberId, values) {
    //user just got subscribed
-   _pcq.push(['addSubscriberToSegment', 'H P', callbackForAddToSegment]);
+   _pcq.push(['addSubscriberToSegment', 'HP', callbackForAddToSegment]);
 }
 
 function callbackForAddToSegment(response) {
