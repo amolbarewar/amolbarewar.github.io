@@ -2,46 +2,75 @@ hello222
 
 
 <script type="text/javascript">
-    (function(p,u,s,h){
-        p._pcq=p._pcq||[];
-        p._pcq.push(['_currentTime',Date.now()]);
-        s=u.createElement('script');
-        s.type='text/javascript';
-        s.async=true;
-        s.src='https://cdn.pushcrewstaging.com/js/fcd3b823009fe7bd741ea50d391ab533.js';
-        h=u.getElementsByTagName('script')[0];
-        h.parentNode.insertBefore(s,h);
-    })(window,document);
+(function(p,u,s,h){
+    p._pcq=p._pcq||[];
+    p._pcq.push(['_currentTime',Date.now()]);
+    s=u.createElement('script');
+    s.type='text/javascript';
+    s.async=true;
+    s.src='https://cdn.pushcrew.com/js/4e44cc75fccb3bbc4c4d9f21dfab29f0.js';
+    h=u.getElementsByTagName('script')[0];
+    h.parentNode.insertBefore(s,h);
+})(window,document);
+// // window._pcq = window._pcq || [];
+// // 	_pcq.push(['APIReady', callbackOnAPIReady]);
+// // 	_pcq.push(['subscriptionSuccessCallback',callbackFunctionOnSuccessfulSubscription]);
+// // 	function callbackOnAPIReady() {
+// //     //now api is ready
+// //     _pcq.push(['addSubscriberToSegment', 'sanchuOnLOad', callbackForAddToSegment]);
+// // 	}
+// // 	function callbackForAddToSegment(response) {
+// //     if(response === -1) {
+// //         console.log('User is not a subscriber or has blocked notifications');
+// //     }
+  
+// //     if(response === false) {
+// //         console.log('Segment name provided is not valid. Maximum length of segment name can be 30 chars and it can only contain alphanumeric characters, underscore and dash.');
+// //     }
+  
+// //     if(response === true) {
+// //         console.log('User got added to the segment successfully. Now you may run any code you wish to execute after user gets added to segment successfully');
+// //     }
+// // 	}
+// // 	function callbackFunctionOnSuccessfulSubscription(subscriberId, values) {
+// //      _pcq.push(['addSubscriberToSegment', 'sanchuOnSubscribe', callbackForAddToSegment]);
+// //      _pcq.push(['addSubscriberToSegment', 'sanchuOnSubscribeNewCheck', callbackForAddToSegment]);
+// // 	}
 // window._pcq = window._pcq || [];
-// 	_pcq.push(['APIReady', callbackOnAPIReady]);
-// 	_pcq.push(['subscriptionSuccessCallback',callbackFunctionOnSuccessfulSubscription]);
-// 	function callbackOnAPIReady() {
-//     //now api is ready
-//     _pcq.push(['addSubscriberToSegment', 'sanchuOnLOad', callbackForAddToSegment]);
-// 	}
-// 	function callbackForAddToSegment(response) {
-//     if(response === -1) {
-//         console.log('User is not a subscriber or has blocked notifications');
-//     }
-  
-//     if(response === false) {
-//         console.log('Segment name provided is not valid. Maximum length of segment name can be 30 chars and it can only contain alphanumeric characters, underscore and dash.');
-//     }
-  
-//     if(response === true) {
-//         console.log('User got added to the segment successfully. Now you may run any code you wish to execute after user gets added to segment successfully');
-//     }
-// 	}
-// 	function callbackFunctionOnSuccessfulSubscription(subscriberId, values) {
-//      _pcq.push(['addSubscriberToSegment', 'sanchuOnSubscribe', callbackForAddToSegment]);
-//      _pcq.push(['addSubscriberToSegment', 'sanchuOnSubscribeNewCheck', callbackForAddToSegment]);
-// 	}
+// _pcq.push(['APIReady', callbackOnAPIReady]); //will execute callback function when PushCrew API is ready
+
+// function callbackOnAPIReady() {
+//    //now api is ready
+//    _pcq.push(['addSubscriberToSegment', 'home % page', callbackForAddToSegment]);
+// }
+
+// function callbackForAddToSegment(response) {
+//    if(response === -1) {
+//        console.log('User is not a subscriber or has blocked notifications');
+//    }
+ 
+//    if(response === false) {
+//        console.log('Segment name provided is not valid. Maximum length of segment name can be 30 chars and it can only contain alphanumeric characters, underscore and dash.');
+//    }
+ 
+//    if(response === true) {
+//        console.log('User got added to the segment successfully. Now you may run any code you wish to execute after user gets added to segment successfully');
+//    }
+// }
+
 window._pcq = window._pcq || [];
 _pcq.push(['APIReady', callbackOnAPIReady]); //will execute callback function when PushCrew API is ready
 
+_pcq.push(['subscriptionSuccessCallback',callbackOnSuccessfulSubscription]); //registers callback function to be called when user gets successfully subscribed
+
 function callbackOnAPIReady() {
    //now api is ready
-   _pcq.push(['addSubscriberToSegment', 'home % page', callbackForAddToSegment]);
+   _pcq.push(['addSubscriberToSegment', 'H P', callbackForAddToSegment]);
+}
+
+function callbackOnSuccessfulSubscription(subscriberId, values) {
+   //user just got subscribed
+   _pcq.push(['addSubscriberToSegment', 'H P', callbackForAddToSegment]);
 }
 
 function callbackForAddToSegment(response) {
@@ -55,6 +84,27 @@ function callbackForAddToSegment(response) {
  
    if(response === true) {
        console.log('User got added to the segment successfully. Now you may run any code you wish to execute after user gets added to segment successfully');
+   }
+}
+
+
+_pcq.push(['APIReady', callbackOnAPIReady]); //will execute callback function when PushCrew API is ready
+
+function callbackOnAPIReady() {
+   _pcq.push(['removeSubscriberFromSegment', 'HP', callbackForRemoveFromSegment]);  
+}
+
+function callbackForRemoveFromSegment(response) {
+   if(response === -1) {
+       console.log('User is not a subscriber or has blocked notifications');
+   }
+ 
+   if(response === false) {
+       console.log('Segment name provided is not valid. Maximum length of segment name can be 30 chars and it can only contain alphanumeric characters, underscore and dash.');
+   }
+ 
+   if(response === true) {
+       console.log('User got removed from the segment successfully. Now you may run any code you wish to execute after user gets removed from segment successfully');
    }
 }
 
