@@ -65,12 +65,7 @@ _pcq.push(['subscriptionSuccessCallback',callbackOnSuccessfulSubscription]); //r
 
 function callbackOnAPIReady() {
    //now api is ready
-   _pcq.push(['addSubscriberToSegment', 'H P1', callbackForAddToSegment]);
-}
-
-function callbackOnSuccessfulSubscription(subscriberId, values) {
-   //user just got subscribed
-   _pcq.push(['addSubscriberToSegment', 'H P1', callbackForAddToSegment]);
+   _pcq.push(['addSubscriberToSegment', 'amolbarewar', callbackForAddToSegment]);
 }
 
 function callbackForAddToSegment(response) {
@@ -84,27 +79,6 @@ function callbackForAddToSegment(response) {
  
    if(response === true) {
        console.log('User got added to the segment successfully. Now you may run any code you wish to execute after user gets added to segment successfully');
-   }
-}
-
-
-_pcq.push(['APIReady', callbackOnAPIReady]); //will execute callback function when PushCrew API is ready
-
-function callbackOnAPIReady() {
-   _pcq.push(['removeSubscriberFromSegment', 'HP', callbackForRemoveFromSegment]);  
-}
-
-function callbackForRemoveFromSegment(response) {
-   if(response === -1) {
-       console.log('User is not a subscriber or has blocked notifications');
-   }
- 
-   if(response === false) {
-       console.log('Segment name provided is not valid. Maximum length of segment name can be 30 chars and it can only contain alphanumeric characters, underscore and dash.');
-   }
- 
-   if(response === true) {
-       console.log('User got removed from the segment successfully. Now you may run any code you wish to execute after user gets removed from segment successfully');
    }
 }
 
