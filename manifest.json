@@ -1,3 +1,12 @@
 {
-
+    "name": "amolbarewarAMD",
+    "short_name": "amolbarewarAMD",
+    "icons": [{
+        "src": "/logo_192_by_192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }],
+    "start_url": "/",
+    "display": "standalone",
+    "gcm_user_visible_only": true
 }
