@@ -1,6 +1,6 @@
 {
-    "name": "testingAPI6",
-    "short_name": "testingAPI6",
+    "name": "apitetsing789",
+    "short_name": "apitetsing789",
     "icons": [{
         "src": "/logo_192_by_192.png",
         "sizes": "192x192",
@@ -8,6 +8,6 @@
     }],
     "start_url": "/",
     "display": "standalone",
-    "gcm_sender_id": "1074530647821",
+    "gcm_sender_id": "655215898416",
     "gcm_user_visible_only": true
 }
