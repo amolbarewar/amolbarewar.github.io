@@ -1,2 +1,2 @@
 var version = 2;
-importScripts('https://cdn.pushcrewstaging.com/sw/21cd2db57194b4353d6206d350c56499.js');
+importScripts('https://cdn.pushcrew.com/sw/1f68592e4ca07b0f4c64a78b0b7adf96.js');
