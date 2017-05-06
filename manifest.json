@@ -1,6 +1,6 @@
 {
-    "name": "testingjs",
-    "short_name": "testingjs",
+    "name": "snowplowJS",
+    "short_name": "snowplowJS",
     "icons": [{
         "src": "/logo_192_by_192.png",
         "sizes": "192x192",
