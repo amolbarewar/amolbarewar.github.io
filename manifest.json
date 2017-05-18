@@ -1,6 +1,6 @@
 {
-    "name": "snowplowJS",
-    "short_name": "snowplowJS",
+    "name": "amolbarewar",
+    "short_name": "amolbarewar",
     "icons": [{
         "src": "/logo_192_by_192.png",
         "sizes": "192x192",
@@ -8,6 +8,6 @@
     }],
     "start_url": "/",
     "display": "standalone",
-    "gcm_sender_id": "88285678964",
+    "gcm_sender_id": "1057112439681",
     "gcm_user_visible_only": true
 }
