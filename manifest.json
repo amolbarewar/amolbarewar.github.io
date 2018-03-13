@@ -1,6 +1,6 @@
 {
-    "name": "https",
-    "short_name": "https",
+    "name": "amolbarewar11",
+    "short_name": "amolbarewar11",
     "icons": [{
         "src": "/logo_192_by_192.png",
         "sizes": "192x192",
@@ -8,6 +8,6 @@
     }],
     "start_url": "/",
     "display": "standalone",
-    "gcm_sender_id": "597064512760",
+    "gcm_sender_id": "1057112439681",
     "gcm_user_visible_only": true
 }
