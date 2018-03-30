@@ -1,6 +1,6 @@
 {
-    "name": "sanchita",
-    "short_name": "sanchita",
+    "name": "testimpersonate",
+    "short_name": "testimpersonate",
     "icons": [{
         "src": "/logo_192_by_192.png",
         "sizes": "192x192",
@@ -8,6 +8,6 @@
     }],
     "start_url": "/",
     "display": "standalone",
-    "gcm_sender_id": "1070675442273",
+    "gcm_sender_id": "1057112439681",
     "gcm_user_visible_only": true
 }
