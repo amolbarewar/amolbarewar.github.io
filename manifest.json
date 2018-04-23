@@ -1,6 +1,6 @@
 {
-    "name": "amolbarewar11",
-    "short_name": "amolbarewar11",
+    "name": "cancel3",
+    "short_name": "cancel3",
     "icons": [{
         "src": "/logo_192_by_192.png",
         "sizes": "192x192",
@@ -8,6 +8,6 @@
     }],
     "start_url": "/",
     "display": "standalone",
-    "gcm_sender_id": "1057112439681",
+    "gcm_sender_id": "649387233718",
     "gcm_user_visible_only": true
 }
