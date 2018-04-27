@@ -1,6 +1,6 @@
 {
-    "name": "pm2",
-    "short_name": "pm2",
+    "name": "sanchita",
+    "short_name": "sanchita",
     "icons": [{
         "src": "/logo_192_by_192.png",
         "sizes": "192x192",
@@ -8,6 +8,6 @@
     }],
     "start_url": "/",
     "display": "standalone",
-    "gcm_sender_id": "597858669315",
+    "gcm_sender_id": "1004398295329",
     "gcm_user_visible_only": true
 }
