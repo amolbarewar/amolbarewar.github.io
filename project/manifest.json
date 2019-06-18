@@ -6,14 +6,15 @@
         "storage",
         "tabs"
     ],
-    "content_scripts": [
-	  {
-	    "matches": ["*://*.google.co.in/*"],
-	    "js": ["background.js"]
-	  }
-	],
     "browser_action": {
 		"default_popup": "popup.html"
 	},
+    "content_scripts": [
+      {
+        "matches": ["https://www.tsrtconline.in/*", "http://*/*"],
+        "js": ["jquery.js","content.js"],
+        "run_at": "document_end"
+      }
+    ],
     "manifest_version": 2
 }
